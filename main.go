@@ -2,13 +2,30 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 )
 
 func main() {
 
-	var num = rand.Intn(23)
+	for i := 1; i <= 100; i++ {
 
-	fmt.Println("my favorite number is ", num)
+		if i % 15 == 0 {
+
+			fmt.Println("Fizz Buzz")
+
+		} else if i % 3 == 0 {
+
+			fmt.Println("Fizz")
+
+		} else if i % 5 == 0 {
+
+			fmt.Println("Buzz")
+
+		} else {
+
+			fmt.Println(i)
+
+		}
+
+	}
 
 }
